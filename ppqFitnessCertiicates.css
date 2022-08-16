@@ -1,0 +1,172 @@
+﻿@font-face {
+    font-family: "Trebuchet MS";
+    src: url("fonts/TrebuchetMS.eot");
+    src: url("fonts/TrebuchetMS.eot?#iefix") format("embedded-opentype"), url("fonts/TrebuchetMS.woff") format("woff"), url("fonts/TrebuchetMS.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url("fonts/TrebuchetMS-Bold.eot");
+    src: url("fonts/TrebuchetMS-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/TrebuchetMS-Bold.woff") format("woff"), url("fonts/TrebuchetMS-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+}
+
+*, *:before, *:after, *:first-letter, p:first-line, div:first-line, blockquote:first-line, li:first-line {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+@media print {
+    @page {
+        size: A4;        
+    }
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .section {
+        page-break-before: always;        
+        padding: 1.5cm 1.27cm 2cm;
+    }
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 11pt;   
+}
+
+.container {
+    max-width: 21cm;
+    margin: 0 auto;
+}
+
+.header-img {
+    display: block;
+    width: 9.1cm;
+    margin-left: auto;
+}
+
+.title {
+    font-size: 12pt;
+    text-align: center;
+    margin-bottom: 0.5cm;
+}
+
+.paragraph {    
+    font-size: 11pt;
+    line-height: 1.2;        
+}
+
+.list {
+    margin-left: 25pt;    
+}
+
+.header-img,
+.paragraph,
+.table,
+.list {
+    margin-bottom: .5cm;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+.red-text {
+    color: #ff0000;
+}
+
+.paragraph.no-margin {
+    margin-bottom: 0;
+}
+
+.link {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+@media print {
+    .red-text {
+        color: #ff0000;
+    }
+}
+
+.table-cell {
+    font-size: 11pt;
+    vertical-align: top;
+}
+
+.table-cell:first-child {
+    padding-right: 0.5cm;
+}
+
+.list {
+    page-break-inside: avoid;
+}
+
+.list-item {
+    font-weight: bold;
+}
+
+.header {
+    width: 21cm;
+    margin: 0 auto;
+    font-size: 11pt;
+    color: #909592;
+    padding-top: .7cm;
+    padding-bottom: .7cm;
+}
+
+.footer {
+    width: 21cm;
+    margin: 0 auto;
+    padding-bottom: .7cm;
+    text-align: center;
+}
+
+@media print {
+    .header {
+        width: 100%;
+        position: fixed;
+        top: 0;        
+    }
+
+    .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;        
+    }
+
+    .header-container {
+        padding: 0 1.27cm;
+    }
+}
+
+.footer-paragraph {
+    width: 100%;
+    font-size: 9pt;
+    color: #909592;
+    text-align: center;
+    margin-bottom: 5mm;
+}
+
+.footer-table {
+    margin: 0 auto;
+}
+
+.footer-table-cell {
+    padding: 0 2mm;
+    vertical-align: central;
+}
